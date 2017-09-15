@@ -1,0 +1,18 @@
+{
+    "apis": [{
+            "name": "test",
+            "listenpath": "/",
+            "upstreamurl": "http://echo.jpillora.com",
+            "active": true,
+            "plugins": ["ratelimit", "role2path"]
+        },
+        {
+            "name": "test2",
+            "listenpath": "/",
+            "upstreamurl": "http://echo.jpillora.com",
+            "active": true,
+            "plugins": ["ratelimit"]
+        }
+    ],
+    "blacklist": []
+}

@@ -43,15 +43,15 @@ func Parse(serverPath, gatewayPath string) error {
 		return err
 	}
 
-	file, err = os.Open(gatewayPath)
-	if err != nil {
-		return err
-	}
+	// file, err = os.Open(gatewayPath)
+	// if err != nil {
+	// 	return err
+	// }
 
-	err = json.NewDecoder(file).Decode(&GatewayConfiguration)
-	if err != nil {
-		return err
-	}
+	// err = json.NewDecoder(file).Decode(&GatewayConfiguration)
+	// if err != nil {
+	// 	return err
+	// }
 
 	log.Println("Successfully read configuration at: %s and %s", serverPath, gatewayPath)
 	return nil

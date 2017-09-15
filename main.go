@@ -23,10 +23,10 @@ func main() {
 
 	flag.Parse()
 
-	err := config.Parse("./config/config.server.json", "./config/config.gateway.json")
-	if err != nil {
-		log.Fatalf("Unable to parse config because: %s", err)
-	}
+	// err := config.Parse("./config/config.server.json", "./config/config.gateway.json")
+	// if err != nil {
+	// 	log.Fatalf("Unable to parse config because: %s", err)
+	// }
 
 	r := chi.NewRouter()
 
